@@ -1,0 +1,32 @@
+con_4lSRIDTD0SzJ6RSd
+    
+    {
+      "options": {
+        "disable_signup": false,
+        "provider": "sms_gateway",
+        "gateway_url": "https://nmapis.herokuapp.com/sms_gateway",
+        "gateway_authentication": {
+          "method": "bearer",
+          "subject": "urn:Auth0",
+          "audience": "urn:api.obos.no",
+          "secret": "VHIyd2VlMGoyMmlrYWFzbG1xc2VzSmVpck5OSnd3aWUyMzU0MEphb3Nka3dlbTI0MjJJS0owMzAzaWVhU2REU21tOTkzMg==",
+          "secret_base64_encoded": true
+        },
+        "from": "OBOS",
+        "syntax": "md_with_macros",
+        "template": "Din verifiseringskode er @@password@@.",
+        "totp": {
+          "time_step": 300,
+          "length": 4
+        },
+        "messaging_service_sid": null,
+        "brute_force_protection": true,
+        "forward_req_info": "true"
+      },
+      "is_domain_connection": false,
+      "enabled_clients": [
+        "AF0tFt1P7Vz17ox3A1BDUQzJM4r6wnVt",
+        "nW3umg0F03MyAwMumIFKxxSEpqbi6Fgy"
+      ]
+    }
+  
